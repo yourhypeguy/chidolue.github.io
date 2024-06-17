@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>favourking mart</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
+
+        <style>
+            html body{
+                background-color: rgb(248, 246, 248);
+                position: relative;
+                top: 0px;
+                right: 0px;
+                left: 0px;
+                bottom: 0px;
+            }
+
+            header{
+                background:rgb(177, 176, 176);
+                width: 100%;
+                height: 5rem;
+                margin: 0px auto;
+                padding: 0px ;
+                border: 2px solid;
+                box-shadow: 0px 2px 9px black;
+                position: sticky;
+                top: 0px;
+                z-index: 1;
+            }
+
+            .img{
+                width: 17%;
+                padding: 5px;
+            }
+
+            header nav{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 5px;
+                padding: 5px;
+                
+            }
+
+            header ul li{
+                display: inline-block;
+                list-style: none;
+                padding: 7px;
+
+            }
+            header a{
+                text-decoration: none;
+                color: black;
+                font-family: 'Roboto Mono', monospace;
+                font-size: 13px
+            }
+
+            header nav ul li ::after{
+                content:"";
+                width: 0%;
+                background: black;
+                height: 2px;
+                display: block;
+                margin: auto;
+                transition: ease-in-out;
+                transition-duration: 0.5s;
+            }
+
+            header nav ul li :hover::after{
+                width: 100%;
+            }
+
+            .imgg{
+                width: 89.5%;
+                display: flex;
+                justify-self: center;
+                align-items: center;
+                margin: 5px auto;
+                border: 2px solid black;
+                box-shadow: 2px 4px 5px black;
+                
+            }
+
+            #item{
+                font-size: 25px;
+                font-family: 'Roboto Mono', monospace;
+                margin: 5px auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                text-decoration: underline;
+                text-shadow: 2px 2px 5px gray;
+            }
+
+            .con{
+                width: 95vw;
+                height: auto;
+                background: rgb(226, 221, 221);
+                margin: 0px auto;
+                border: 1px solid black;
+                box-shadow: 0px 0px 7px rgb(59, 59, 57);
+                display: grid;
+                grid-template-columns: repeat(5,1fr);
+            }
+
+            .itemcon{
+                /* display: grid;
+                grid-template-columns: repeat(4,1fr); */
+                border: 2px solid black;
+                width: 60%;
+                height: 20em;
+                margin: 5px auto;
+                box-shadow: 0px 0px 5px black;
+            }
+
+
+            .image{
+                width: 100%;
+            }
+
+            .ppp{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin: 0px;
+                padding: 4px;
+                background-color: rgb(102, 101, 98);
+                color: white;
+                height: 34px;
+              
+            }
+
+            .about{
+                margin: 15px auto;
+                padding: 5px;
+                background-color: rgb(209, 190, 165);
+                box-shadow: 0px 0px 5px;
+                font-family: 'Licorice', cursive;
+                color: white;
+                font-size: 'Pushster', cursive;
+            }
+            .about h1{
+                font-size: 2em;
+                text-align: center;
+                text-shadow: 0px 0px 5px white;
+                color: rgb(92, 90, 90);
+            }
+            .about p{
+                text-align: center;
+                
+            }
+
+            .foot{
+                width: 100%;
+                height: auto;
+                background: rgb(38, 37, 37);
+                margin: 7px auto 0px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .foot ul{
+                list-style-type: none;
+            }
+
+            .foot li{
+                display: inline-block;
+                padding: 7px;
+            }
+
+            .foot a{
+                text-decoration: none;
+                color: white;
+            }
+
+            .imggg{
+                width: 19px;
+                position: relative;
+                top: 5px;
+            }
+            .foot h4{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                color: rgb(211, 207, 207);
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        
+        <header>
+            <nav>
+                <img class="img" src="logoo.png" />
+
+                <!-- <form action="search">
+                    <input type="search" name="search">
+                    <input type="submit" name="submit">
+                </form> -->
+
+                <div>
+                    
+                    <ul>
+                        <li>
+                            <a href="">ABOUT</a>
+                        </li>
+
+                        <li>
+                            <a href="">PRODUCTS</a>
+                        </li>
+
+                        <li>
+                            <a href="">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </header>
+
+        <main>
+            <img class="imgg" src="groceries.jpg" />
+
+            <section>
+                <div class="about">
+                    <h1>About Us</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolor quis corporis totam quos iste porro reprehenderit harum ducimus, soluta ipsam? Ipsam adipisci dolorum ducimus nobis sint nihil sapiente facere delectus eum voluptas, fugiat excepturi aliquid reiciendis eos ut ratione necessitatibus quos molestiae nisi. Animi eveniet odit est mollitia facilis soluta distinctio, vel numquam praesentium! Beatae quae asperiores dolorem minus adipisci, vitae incidunt omnis iste ut neque, quam deleniti? Harum veritatis voluptates, earum sint perferendis iusto aspernatur libero, voluptatem magnam in suscipit praesentium quae distinctio soluta? Totam modi nisi nostrum eius, architecto fuga dicta minima porro sapiente recusandae dignissimos quos accusamus incidunt soluta cum natus unde quam autem sequi nam ex assumenda saepe voluptatem. Impedit repellat blanditiis quo molestiae labore. Ad repellat asperiores illo voluptatem, similique alias animi eveniet necessitatibus veniam adipisci dignissimos maxime molestias vitae enim iusto ipsam odio commodi aliquid provident ducimus laborum neque officiis. Aut illo laborum in repellat sit rem harum sapiente repudiandae eius, similique molestias nisi assumenda nobis doloribus voluptas sint accusamus excepturi incidunt sunt. Quia sapiente excepturi id consequuntur animi mollitia, voluptates expedita, perspiciatis fuga cupiditate ullam doloribus corporis. Asperiores blanditiis quaerat ipsum accusamus eum quos hic provident deserunt pariatur, non neque dolores quidem?</p>
+
+                </div>
+            </section>
+
+            <h1 id="item">ITEMS IN STOCK</h1>
+
+            <section>
+                <div class="con">
+                    <div class="itemcon">
+                        <img class="image" src="wine.png" />
+
+                        <p class="ppp">eva wine 50$</p>
+
+                    </div>
+
+                    <div class="itemcon">
+                        <img class="image" src="wine.png" />
+
+                        <p class="ppp">eva wine 50$</p>
+
+                    </div>
+
+                    <div class="itemcon">
+                        <img class="image" src="wine.png" />
+
+                        <p class="ppp">eva wine 50$</p>
+
+                    </div>
+
+                    <div class="itemcon">
+                        <img class="image" src="wine.png" />
+
+                        <p class="ppp">eva wine 50$</p>
+
+                    </div>
+
+                    <div class="itemcon">
+                        <img class="image" src="wine.png" />
+
+                        <p class="ppp">eva wine 50$</p>
+
+                    </div>
+
+                    <div class="itemcon">
+                        <img class="image" src="wine.png" />
+
+                        <p class="ppp">eva wine 50$</p>
+
+                    </div>
+
+                    <div class="itemcon">
+                        <img class="image" src="wine.png" />
+
+                        <p class="ppp">eva wine 50$</p>
+
+                    </div>
+
+                    <div class="itemcon">
+                        <img class="image" src="wine.png" />
+
+                        <p class="ppp">eva wine 50$</p>
+
+                    </div>
+
+                    <div class="itemcon">
+                        <img class="image" src="wine.png" />
+
+                        <p class="ppp">eva wine 50$</p>
+
+                    </div>
+
+                    <div class="itemcon">
+                        <img class="image" src="wine.png" />
+
+                        <p class="ppp">eva wine 50$</p>
+
+                    </div>
+
+
+                    
+                    
+                </div>
+            </section>
+
+            <section>
+                <div class="foot">
+                    <footer>
+                        <h4>Contact us on</h4>
+                        <ul>
+                            <li>
+                                <img class="imggg" src="instagram.png" />
+                                <a href="">Instagram</a>
+                            </li>
+
+                            <li>
+                                <img class="imggg" src="whatsapp.png" />
+                                <a href="">Whatsapp</a>
+                            </li>
+
+                            <li>
+                                <img class="imggg" src="call.png" />
+                                <a href="">Contact Info</a>
+                            </li>
+                        </ul><br>
+
+                        <h4>2022 Favourkingmart.com. All rights reserved</h4>
+
+
+                    </footer>
+                </div>
+            </section>
+
+
+        </main>
+    </body>
+</html>
