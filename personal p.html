@@ -29,6 +29,16 @@ _<!DOCTYPE html>
 
     <body>
 
+      <div id="preloader">
+        <div class="text-con">
+          <span>Creative Thinker,</span>
+          <span>Organised,</span>
+          <span>And Fun</span>
+
+        </div>
+
+      </div>
+
       
         
         <nav class="nav">
@@ -611,6 +621,11 @@ _<!DOCTYPE html>
     </main>
 
     <script>
+        const preloader = document.getElementById("preloader");
+        window.addEventListener("load", ()=>{
+          preloader.style.display="none";
+        })
+
       window.addEventListener('scroll',(e)=>{
         const nav = document.querySelector('.nav');
         if(window.pageYOffset>0){
@@ -658,6 +673,8 @@ _<!DOCTYPE html>
         hamburger.classList.remove("active");
           uls.classList.remove("active");
       }))
+
+
     </script>
     
     </body>
