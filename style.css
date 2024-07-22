@@ -6,6 +6,34 @@
                 scroll-behavior: smooth;
             }
 
+            #preloader{
+              height: 100vh;
+              width: 100%;
+              background: black;
+              color: white;
+              position: fixed;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              z-index: 55;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              overflow: hidden;
+            }
+            #preloader.text-con{
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              height: 60px;
+              width: 280px;
+              font-size: 20px;
+              font-weight: 800;
+              overflow: hidden;
+              color: white;
+
+            }
+
 
             .background-vid{
               position: fixed;
@@ -4098,7 +4126,7 @@
                 justify-content: space-between;
                 align-items: center;
                 min-width: 100vw;
-                height: 2.5rem;
+                height: 3rem;
                 padding: 0px 30px;
                 background-color: rgb(255, 255, 255);
                 position: sticky;
